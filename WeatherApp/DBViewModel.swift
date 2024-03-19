@@ -53,11 +53,11 @@ class DBViewModel: ObservableObject {
     }
     func addFavourite(_ city : DataBaseCity ) -> Bool {
         
-        if self.publishedCities.contains(where: { $0.cityname == city.cityname && $0.user_id == city.user_id && $0.state == city.state }) {
+        if self.publishedCities.contains(where: { $0.cityname == city.cityname &&  city.user_id == self.uuid && $0.state == city.state }) {
             return false
         }
         
-        self.publishedCities.append(city)
+        
         
         let urlString = "http://44.205.244.237:9000/favourites"
         guard let url = URL(string: urlString) else { return false }
@@ -79,10 +79,11 @@ class DBViewModel: ObservableObject {
                         request.httpMethod = "POST"
                         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
                         request.httpBody = jsonData
-                    
+                        
                 let (data, response) = try await URLSession.shared.data(for: request)
-                
+                self.getFavourites()
                 if let responseString = String(data: data, encoding: .utf8) {
+                    
                     print("Response data string: \(responseString)")
                 }
             } catch {

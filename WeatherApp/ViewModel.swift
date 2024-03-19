@@ -130,7 +130,7 @@ class WeatherViewModel: ObservableObject {
                 let decoder = JSONDecoder()
                 if let ZipResponse = try? decoder.decode(ZipResponse.self, from: data) {
                     
-                    self.CurrentCity = DataBaseCity( lat: ZipResponse.lat, lon: ZipResponse.lon, country: "US", state: "ZIP", name: zipCode, user_id: "")
+                    self.CurrentCity = DataBaseCity( lat: ZipResponse.lat, lon: ZipResponse.lon, country: "US", state: "ZIP", name: zipCode, user_id: self.uuid)
                                             
                     self.fetchWeather(latitude: ZipResponse.lat, longitude: ZipResponse.lon)
                     
@@ -179,7 +179,7 @@ class WeatherViewModel: ObservableObject {
                     if let cities = try? decoder.decode([City].self, from: data) {
                         
                         do{
-                            self.CurrentCity = DataBaseCity(lat: cities[0].lat, lon: cities[0].lon, country: cities[0].country, state: cities[0].state, name: cities[0].name, user_id: "")
+                            self.CurrentCity = DataBaseCity(lat: cities[0].lat, lon: cities[0].lon, country: cities[0].country, state: cities[0].state, name: cities[0].name, user_id: self.uuid)
                             print (self.CurrentCity?.latitude)
                             
                             self.fetchWeather(latitude: self.CurrentCity!.latitude, longitude: self.CurrentCity!.longitude)
