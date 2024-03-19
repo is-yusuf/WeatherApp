@@ -7,19 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88D1A8622BA996A700BB56D2 /* CityCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D1A8612BA996A700BB56D2 /* CityCardView.swift */; };
 		88E707C42BA81D2200149D6B /* WeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E707C32BA81D2200149D6B /* WeatherAppApp.swift */; };
 		88E707C62BA81D2200149D6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E707C52BA81D2200149D6B /* ContentView.swift */; };
 		88E707C82BA81D2400149D6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88E707C72BA81D2400149D6B /* Assets.xcassets */; };
 		88E707CC2BA81D2400149D6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88E707CB2BA81D2400149D6B /* Preview Assets.xcassets */; };
+		88E707D32BA822D600149D6B /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E707D22BA822D600149D6B /* WeatherView.swift */; };
+		88E707D52BA8248700149D6B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E707D42BA8248700149D6B /* ViewModel.swift */; };
+		88E707DD2BA82F0E00149D6B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E707DC2BA82F0E00149D6B /* LocationManager.swift */; };
+		88E707E12BA8454600149D6B /* AsyncImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E707E02BA8454600149D6B /* AsyncImageLoader.swift */; };
+		88E707E52BA961AD00149D6B /* DBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E707E42BA961AD00149D6B /* DBViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		88D1A8612BA996A700BB56D2 /* CityCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCardView.swift; sourceTree = "<group>"; };
 		88E707C02BA81D2200149D6B /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E707C32BA81D2200149D6B /* WeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppApp.swift; sourceTree = "<group>"; };
 		88E707C52BA81D2200149D6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		88E707C72BA81D2400149D6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88E707C92BA81D2400149D6B /* WeatherApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeatherApp.entitlements; sourceTree = "<group>"; };
 		88E707CB2BA81D2400149D6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		88E707D22BA822D600149D6B /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		88E707D42BA8248700149D6B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		88E707D62BA824D000149D6B /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		88E707DB2BA82C6000149D6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		88E707DC2BA82F0E00149D6B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		88E707E02BA8454600149D6B /* AsyncImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageLoader.swift; sourceTree = "<group>"; };
+		88E707E42BA961AD00149D6B /* DBViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +66,16 @@
 		88E707C22BA81D2200149D6B /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				88E707DB2BA82C6000149D6B /* Info.plist */,
 				88E707C32BA81D2200149D6B /* WeatherAppApp.swift */,
 				88E707C52BA81D2200149D6B /* ContentView.swift */,
+				88E707DC2BA82F0E00149D6B /* LocationManager.swift */,
+				88D1A8612BA996A700BB56D2 /* CityCardView.swift */,
+				88E707D22BA822D600149D6B /* WeatherView.swift */,
+				88E707E42BA961AD00149D6B /* DBViewModel.swift */,
+				88E707E02BA8454600149D6B /* AsyncImageLoader.swift */,
+				88E707D42BA8248700149D6B /* ViewModel.swift */,
+				88E707D62BA824D000149D6B /* Config.xcconfig */,
 				88E707C72BA81D2400149D6B /* Assets.xcassets */,
 				88E707C92BA81D2400149D6B /* WeatherApp.entitlements */,
 				88E707CA2BA81D2400149D6B /* Preview Content */,
@@ -139,8 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88E707E52BA961AD00149D6B /* DBViewModel.swift in Sources */,
+				88E707D32BA822D600149D6B /* WeatherView.swift in Sources */,
 				88E707C62BA81D2200149D6B /* ContentView.swift in Sources */,
+				88D1A8622BA996A700BB56D2 /* CityCardView.swift in Sources */,
+				88E707DD2BA82F0E00149D6B /* LocationManager.swift in Sources */,
+				88E707D52BA8248700149D6B /* ViewModel.swift in Sources */,
 				88E707C42BA81D2200149D6B /* WeatherAppApp.swift in Sources */,
+				88E707E12BA8454600149D6B /* AsyncImageLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +291,7 @@
 		};
 		88E707D02BA81D2400149D6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88E707D62BA824D000149D6B /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -274,24 +303,31 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yusuf.WeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
+				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -301,6 +337,7 @@
 		};
 		88E707D12BA81D2400149D6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88E707D62BA824D000149D6B /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,24 +349,31 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yusuf.WeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
+				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
