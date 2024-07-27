@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		884598222C531E8100981A38 /* CityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884598212C531E8100981A38 /* CityData.swift */; };
+		884598242C53237500981A38 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884598232C53237500981A38 /* MapView.swift */; };
+		885A88812C25E59900E16DC5 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 885A88802C25E59900E16DC5 /* Config.xcconfig */; };
+		88B436132C51992700BB8AEE /* WeatherAppVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B436122C51992700BB8AEE /* WeatherAppVIew.swift */; };
 		88D1A8622BA996A700BB56D2 /* CityCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D1A8612BA996A700BB56D2 /* CityCardView.swift */; };
 		88E707C42BA81D2200149D6B /* WeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E707C32BA81D2200149D6B /* WeatherAppApp.swift */; };
 		88E707C62BA81D2200149D6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E707C52BA81D2200149D6B /* ContentView.swift */; };
 		88E707C82BA81D2400149D6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88E707C72BA81D2400149D6B /* Assets.xcassets */; };
 		88E707CC2BA81D2400149D6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88E707CB2BA81D2400149D6B /* Preview Assets.xcassets */; };
-		88E707D32BA822D600149D6B /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E707D22BA822D600149D6B /* WeatherView.swift */; };
 		88E707D52BA8248700149D6B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E707D42BA8248700149D6B /* ViewModel.swift */; };
 		88E707DD2BA82F0E00149D6B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E707DC2BA82F0E00149D6B /* LocationManager.swift */; };
 		88E707E12BA8454600149D6B /* AsyncImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E707E02BA8454600149D6B /* AsyncImageLoader.swift */; };
@@ -20,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		884598212C531E8100981A38 /* CityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityData.swift; sourceTree = "<group>"; };
+		884598232C53237500981A38 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		885A88802C25E59900E16DC5 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		88B436122C51992700BB8AEE /* WeatherAppVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppVIew.swift; sourceTree = "<group>"; };
 		88D1A8612BA996A700BB56D2 /* CityCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCardView.swift; sourceTree = "<group>"; };
 		88E707C02BA81D2200149D6B /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E707C32BA81D2200149D6B /* WeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppApp.swift; sourceTree = "<group>"; };
@@ -27,9 +34,7 @@
 		88E707C72BA81D2400149D6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88E707C92BA81D2400149D6B /* WeatherApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeatherApp.entitlements; sourceTree = "<group>"; };
 		88E707CB2BA81D2400149D6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		88E707D22BA822D600149D6B /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		88E707D42BA8248700149D6B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		88E707D62BA824D000149D6B /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		88E707DB2BA82C6000149D6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		88E707DC2BA82F0E00149D6B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		88E707E02BA8454600149D6B /* AsyncImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageLoader.swift; sourceTree = "<group>"; };
@@ -69,13 +74,15 @@
 				88E707DB2BA82C6000149D6B /* Info.plist */,
 				88E707C32BA81D2200149D6B /* WeatherAppApp.swift */,
 				88E707C52BA81D2200149D6B /* ContentView.swift */,
+				885A88802C25E59900E16DC5 /* Config.xcconfig */,
 				88E707DC2BA82F0E00149D6B /* LocationManager.swift */,
 				88D1A8612BA996A700BB56D2 /* CityCardView.swift */,
-				88E707D22BA822D600149D6B /* WeatherView.swift */,
+				884598212C531E8100981A38 /* CityData.swift */,
+				884598232C53237500981A38 /* MapView.swift */,
+				88B436122C51992700BB8AEE /* WeatherAppVIew.swift */,
 				88E707E42BA961AD00149D6B /* DBViewModel.swift */,
 				88E707E02BA8454600149D6B /* AsyncImageLoader.swift */,
 				88E707D42BA8248700149D6B /* ViewModel.swift */,
-				88E707D62BA824D000149D6B /* Config.xcconfig */,
 				88E707C72BA81D2400149D6B /* Assets.xcassets */,
 				88E707C92BA81D2400149D6B /* WeatherApp.entitlements */,
 				88E707CA2BA81D2400149D6B /* Preview Content */,
@@ -150,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88E707CC2BA81D2400149D6B /* Preview Assets.xcassets in Resources */,
+				885A88812C25E59900E16DC5 /* Config.xcconfig in Resources */,
 				88E707C82BA81D2400149D6B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,11 +170,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				88E707E52BA961AD00149D6B /* DBViewModel.swift in Sources */,
-				88E707D32BA822D600149D6B /* WeatherView.swift in Sources */,
 				88E707C62BA81D2200149D6B /* ContentView.swift in Sources */,
+				88B436132C51992700BB8AEE /* WeatherAppVIew.swift in Sources */,
+				884598222C531E8100981A38 /* CityData.swift in Sources */,
 				88D1A8622BA996A700BB56D2 /* CityCardView.swift in Sources */,
 				88E707DD2BA82F0E00149D6B /* LocationManager.swift in Sources */,
 				88E707D52BA8248700149D6B /* ViewModel.swift in Sources */,
+				884598242C53237500981A38 /* MapView.swift in Sources */,
 				88E707C42BA81D2200149D6B /* WeatherAppApp.swift in Sources */,
 				88E707E12BA8454600149D6B /* AsyncImageLoader.swift in Sources */,
 			);
@@ -291,7 +301,6 @@
 		};
 		88E707D02BA81D2400149D6B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88E707D62BA824D000149D6B /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -304,8 +313,12 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherApp/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_CFBundleDisplayName = WeatherApp;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = Hello;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "always using";
+				INFOPLIST_KEY_NSLocationUsageDescription = "currently using location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = Hello;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -320,7 +333,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -337,7 +350,6 @@
 		};
 		88E707D12BA81D2400149D6B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88E707D62BA824D000149D6B /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -350,8 +362,12 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherApp/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_CFBundleDisplayName = WeatherApp;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = Hello;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "always using";
+				INFOPLIST_KEY_NSLocationUsageDescription = "currently using location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = Hello;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -366,7 +382,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;

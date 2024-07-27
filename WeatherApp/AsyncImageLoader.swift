@@ -1,4 +1,6 @@
 import SwiftUI
+import UIKit
+
 
 struct AsyncImageLoader: View {
     let urlString: String

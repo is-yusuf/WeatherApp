@@ -49,13 +49,14 @@ class WeatherViewModel: ObservableObject {
     
     private var debounceTimer: AnyCancellable?
     private var searchText = ""
-    
+
     
     func loadAPIKey() -> String? {
         guard
             let apiKey = Bundle.main.infoDictionary?["API_KEY"] as? String else {
             return nil
         }
+        
         return apiKey
     }
     
@@ -81,16 +82,20 @@ class WeatherViewModel: ObservableObject {
                 }
                 
                 let decoder = JSONDecoder()
-                if let weatherResponse = try? decoder.decode(WeatherResponse.self, from: data) {
-                    self.currentWeather = weatherResponse.current
-            
-                    self.isLoading = false // Stop loading once the request is completed or
+                do {
+                    let weatherResponse = try decoder.decode(WeatherResponse.self, from: data)
+                        
+                        self.currentWeather = weatherResponse.current
+                        
+                        self.isLoading = false // Stop loading once the request is completed or
+                        
+                        self.message = ""
+                        
+                    }
+                catch {
+                    self.isLoading = false
                     
-                    self.message = ""
-                    
-                } else {
-                    self.isLoading = false // Stop loading once the request is completed or failed
-                    self.message = "Failed to decode response."
+                    self.message = error.localizedDescription
                 }
             }
         }.resume()
@@ -105,6 +110,7 @@ class WeatherViewModel: ObservableObject {
         message = "Loading..." // Optional: Update message to indicate loading
         
         guard let apiKey = loadAPIKey() else {
+            
             self.message = "API Key not found."
             return
         }
@@ -195,7 +201,7 @@ class WeatherViewModel: ObservableObject {
             }.resume()
         }
     
-    func handleInput(input: String) {
+    func handleInput(input: String) -> Void{
         if input.range(of: "^[0-9]+$", options: .regularExpression) != nil {
             fetchByZip(zipCode: input)
         } else {
